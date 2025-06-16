@@ -9,7 +9,7 @@ const Home = () =>{
     useEffect(() => {
         // Sending a get request to the home page and storing the json strings in vars to customize later
         // Remember that .data is the actual payload from my api in the console!
-        axios.get("http://localhost:9090/home").then(response => setcontent(response.data)).catch(err => console.error("Error fetching home page data"))
+        axios.get("http://192.168.8.181:9090/home").then(response => setcontent(response.data)).catch(err => console.error("Error fetching home page data"))
     }, []);
 
     return(
