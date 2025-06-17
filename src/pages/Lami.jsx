@@ -6,7 +6,7 @@ const Lami = () =>{
     const [content, setcontent] = useState({})
 
     useEffect (() => {
-        axios.get("http://192.168.8.181:9090/lami").then(response => setcontent(response.data)).catch(console.error("Error: Could not connect to Lami Endpoint"))
+        axios.get("http://localhost:9090/lami").then(response => setcontent(response.data)).catch(console.error("Error: Could not connect to Lami Endpoint"))
     })
 
 
