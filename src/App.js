@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Lami from "./pages/Lami";
 import Taxi from "./pages/Taxi";
 import Luxury from "./pages/Luxury";
+import SignUp from "./pages/SignUp";
 import {Route, BrowserRouter, Routes} from "react-router-dom";
 
 
@@ -20,6 +21,7 @@ function App() {
                     <Route path={"/lami"} element={<Lami />}/>
                     <Route path={"/taxi"} element={<Taxi />}/>
                     <Route path={"/lux"} element={<Luxury />}/>
+                    <Route path={"/signup"} element={<SignUp/>}/>
                 </Routes>
         </BrowserRouter>
 
